@@ -1,0 +1,230 @@
+/* Algemene styling in de grid-container en per grid-item */
+	.grid-container{
+		min-height: 80px;
+		display: grid;
+		
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr; 
+		grid-gap: 10px 0px;
+		
+		width: 90%;
+		margin: 0 auto;
+		
+		grid-template-areas:
+			"header header pilootInlog"
+	}
+	
+	.grid-container2{
+		min-height: 80px;
+		display: grid;
+		
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr; 
+		grid-gap: 10px 0px;
+		
+		width: 90%;
+		margin: 0 auto;
+		
+		grid-template-areas:
+			"operational1"
+			"operational2"
+			"analythical1"
+			"analythical2"
+	}
+
+	.box1{
+		grid-area: header;
+		position: relative;
+		height: 100px;
+		background-color: red;
+	}
+	
+	.box2{
+		grid-area: pilootInlog;
+		display: flex;
+		flex-direction: column;
+		background-color: blue;
+	}
+
+	.box3{
+		grid-area: operational1;
+		display: flex;
+		flex-direction: column;
+		background-color: orange;
+	}
+
+	.box4{
+		grid-area: operational2;
+		display: flex;
+		flex-flow: column;
+		background-color: dodgerblue;
+	}
+
+	.box5{
+		grid-area: analythical1;
+		display: flex;
+		flex-flow: column;
+		background-color: limegreen;
+	}
+
+	.box6{
+		grid-area: analythical2;
+		display: flex;
+		flex-flow: column;
+		background-color: hotpink;
+	}
+	
+	.box7{
+		grid-area: analythical2;
+		display: flex;
+		flex-flow: column;
+		background-color: hotpink;
+	}
+
+
+/* Kleine tablet staand */
+@media only screen and (min-width: 599px) and (max-width: 799px) {
+	
+	.grid-container{
+		min-height: 80px;
+		display: grid;
+		
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr; 
+		grid-gap: 10px 0px;
+		
+		width: 85%;
+		margin: 0 auto;
+		
+		grid-template-areas:
+			"header header header pilootInlog"
+	}
+	
+	.grid-container2{
+		min-height: 80px;
+		display: grid;
+		
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr; 
+		grid-gap: 10px 0px;
+		
+		width: 85%;
+		margin: 0 auto;
+		
+		grid-template-areas:
+			"operational1 operational2"
+			"analythical1 analythical2"
+	}
+}
+
+
+
+/* Grote tablet staand */
+@media only screen and (min-width: 800px){
+	
+	
+	.grid-container{
+		min-height: 80px;
+		display: grid;
+		
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr; 
+		grid-gap: 10px 0px;
+		
+		width: 80%;
+		margin: 0 auto;
+		
+		grid-template-areas:
+			"header header header pilootInlog"
+	}
+	
+	.grid-container2{
+		min-height: 80px;
+		display: grid;
+		
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr; 
+		grid-gap: 10px 0px;
+		
+		width: 80%;
+		margin: 0 auto;
+		
+		grid-template-areas:
+			"operational1 operational2"
+			"analythical1 analythical2"
+	}
+}
+
+
+
+/* Tablet liggend */
+@media only screen and (min-width: 946px) and (max-width: 1354px){
+		
+	.grid-container{
+		min-height: 80px;
+		display: grid;
+		
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr; 
+		grid-gap: 10px 0px;
+		
+		width: 75%;
+		margin: 0 auto;
+		
+		grid-template-areas:
+			"header header header pilootInlog"
+	}
+	
+	.grid-container2{
+		min-height: 80px;
+		display: grid;
+		
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr; 
+		grid-gap: 10px 0px;
+		
+		width: 75%;
+		margin: 0 auto;
+		
+		grid-template-areas:
+			"operational1 operational2"
+			"analythical1 analythical2"
+	}
+}
+
+
+
+/* Kleine desktop */
+@media only screen and (min-width: 1355px) {
+	.grid-container{
+		min-height: 80px;
+		display: grid;
+		
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr; 
+		grid-gap: 10px 0px;
+		
+		width: 65%;
+		margin: 0 auto;
+		
+		grid-template-areas:
+			"header header header pilootInlog"
+	}
+	
+	.grid-container2{
+		min-height: 80px;
+		display: grid;
+		
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr; 
+		grid-gap: 10px 0px;
+		
+		width: 65%;
+		margin: 0 auto;
+		
+		grid-template-areas:
+			"operational1 operational2"
+			"analythical1 analythical2"
+	}
+	
+}
