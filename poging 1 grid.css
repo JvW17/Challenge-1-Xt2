@@ -3,15 +3,16 @@
 		padding-top: 20px;
 		display: grid;
 		
-		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr; 
 		grid-gap: 10px 0px;
 		
 		width: 90%;
 		margin: 0 auto;
 		
+		grid-template-columns: 70% 30%;
+		
 		grid-template-areas:
-			"header header pilootInlog"
+			"header pilootInlog"
 	}
 	
 	.grid-container2{
@@ -40,6 +41,10 @@
 																border-radius: 20px;
 																margin-right: 10px;
 																text-align: center;
+		/* verwijder eventueel vanaf hier */														display: flex;
+																flex-flow: column;
+																flex-wrap: wrap-reverse;
+																align-content: center;
 															/*	
 																display: flex;
 																justify-content: center;
@@ -100,18 +105,17 @@
 	
 	#logo{
 		width: 110px;
-		margin-left: 24%;
-		padding-top: 5%;
+		padding-top: 3%;
 	}
 	
 	h1{
 		font-size: 25px;
-		margin-top: 5%;
+		margin: 3% 0% 3% 0%;
 	}
 	
 	/* Styling in box2 */
 	#pilootLogo{
-		width: 75px;
+		width: 65px;
 	}
 	
 	#pilootAanduidingTekst{
@@ -129,15 +133,16 @@
 	.grid-container{
 		display: grid;
 		
-		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr; 
 		grid-gap: 10px 0px;
 		
 		width: 85%;
 		margin: 0 auto;
 		
+		grid-template-columns: 80% 20%;
+		
 		grid-template-areas:
-			"header header header pilootInlog"
+			"header pilootInlog"
 	}
 	
 	.grid-container2{
@@ -158,6 +163,7 @@
 													/* Styling van de grid-boxes bij kleine tablet weergave */
 															.box1{
 																display: flex;
+																flex-flow: row;
 															}
 															
 															.box2{
@@ -205,7 +211,7 @@
 	
 	/* Styling in box2 */
 	#pilootLogo{
-		width: 75px;
+		width: 60px;
 		margin: 10% 0% 10% 0%;
 	}
 	
@@ -218,15 +224,16 @@
 	.grid-container{
 		display: grid;
 		
-		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr; 
 		grid-gap: 10px 0px;
 		
 		width: 80%;
 		margin: 0 auto;
 		
+		grid-template-columns: 85% 15%;
+		
 		grid-template-areas:
-			"header header header pilootInlog"
+			"header pilootInlog"
 	}
 	
 	.grid-container2{
@@ -247,6 +254,7 @@
 														/* Styling van de grid-boxes bij grote tablet weergave */
 															.box1{
 																display: flex;
+																flex-flow: row;
 															}
 															
 															.box2{
@@ -274,9 +282,9 @@
 	
 	/* Styling in box1 */
 	#logo{
-		width: 140px;
+		width: 100px;
 		padding: 0px;
-		margin-left: 7%;
+		margin: 2% 0% 2% 5%;
 	}
 	
 	h1{
@@ -303,8 +311,8 @@
 	}
 	
 	#pilootLogo{
-		width: 85px;
-		margin: 7% 0% 7% 0%;
+		width: 60px;
+		margin: 10% 0% 10% 0%;
 	}
 	
 }
@@ -312,20 +320,21 @@
 
 
 /* Tablet liggend */
-@media only screen and (min-width: 946px) and (max-width: 1354px){
+@media only screen and (min-width: 946px) and (max-width: 1099px){
 		
 	.grid-container{
 		display: grid;
 		
-		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr; 
 		grid-gap: 10px 0px;
 		
-		width: 85%;
+		width: 80%;
 		margin: 0 auto;
 		
+		grid-template-columns: 70% 30%;
+		
 		grid-template-areas:
-			"header header header pilootInlog"
+			"header pilootInlog"
 	}
 	
 	.grid-container2{
@@ -335,7 +344,7 @@
 		grid-template-rows: 1fr; 
 		grid-gap: 20px 0px;
 		
-		width: 85%;
+		width: 80%;
 		margin: 0 auto;
 		
 		grid-template-areas:
@@ -344,6 +353,10 @@
 	}
 	
 														/* Styling van de grid-boxes bij tablet liggend weergave */
+														.box2{
+															display: flex;
+															justify-content: space-around;
+														}
 	
 	
 	/* Styling in box1 */
@@ -356,35 +369,39 @@
 	}
 	
 	#logo{
-		width: 140px;
+		width: 100px;
 		padding: 0px;
-		margin-left: 5%;
+		margin-left: 3%;
 	}
 	
 	h1{
 		margin: auto;
 		margin-right: 3%;
-		font-size: 28px;
+		font-size: 24px;
 	}
 	
 	/* Styling in box2 */
+	#pilootTekstenBox2{
+		width: 60%;
+		height: auto;
+		margin-left: 8%;
+		line-height: 1.2;
+	}
+	
 	#pilootAanduidingTekst{
 		display: inline;
-		font-size: 12px;
+		font-size: 14px;
+		margin-bottom: 50px;
 	}
 	
 	#huidigePilootTekst{
 		display: inline;
-		font-size: 12px;
+		font-size: 14px;
 	}
 	
 	#pilootLogo{
-		width: 15px;
-		margin-top: 7%;
-		margin-bottom: 7%;
-		margin-right: 0%;
-		float: right;
-		clear: both;
+		width: 60px;
+		margin: 5% 6% 5% 0%;
 	}
 	
 	
@@ -393,19 +410,20 @@
 
 
 /* Kleine desktop */
-@media only screen and (min-width: 1355px) {
+@media only screen and (min-width: 1100px) and (max-width: 1354px){
 	.grid-container{
 		display: grid;
 		
-		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr; 
 		grid-gap: 10px 0px;
 		
-		width: 65%;
+		width: 75%;
 		margin: 0 auto;
 		
+		grid-template-columns: 70% 30%;
+		
 		grid-template-areas:
-			"header header header pilootInlog"
+			"header pilootInlog"
 	}
 	
 	.grid-container2{
@@ -416,7 +434,7 @@
 		grid-template-rows: 1fr; 
 		grid-gap: 20px 0px;
 		
-		width: 65%;
+		width: 75%;
 		margin: 0 auto;
 		
 		grid-template-areas:
@@ -425,11 +443,95 @@
 	}
 	
 														/* Styling van de grid-boxes bij kleine desktop weergave */
-	
 															.box1{
 																display: flex;
-																flex-direction: column;
-																justify-content: center;
+																flex-flow: row;
+															}
+															
+															.box2{
+																display: flex;
+																justify-content: space-around;
+															}
+															
+	/* Styling in box1 */
+	#tekstMobiel{
+		display: none;
+	}
+	
+	#tekstGroteSchermen{
+		display: inline;
+	}
+	
+	#logo{
+		width: 120px;
+		margin: 2% 0% 2% 3%;
+	}
+	
+	h1{
+		margin-right: 3%;
+		font-size: 28px;
+	}
+	
+	/* Styling in box2 */
+	#pilootTekstenBox2{
+		margin-left: 0%;
+	}
+	
+	#pilootAanduidingTekst{
+		display: inline;
+		font-size: 15px;
+	}
+	
+	#huidigePilootTekst{
+		display: inline;
+		font-size: 15px;
+		margin-top: 50px;
+	}
+	
+	#pilootLogo{
+		width: 70px;
+		margin: 3% 0% 3% 0%;
+	}
+	
+}
+
+/* Grote desktop */
+@media only screen and (min-width: 1355px) {
+	.grid-container{
+		display: grid;
+		
+		grid-template-rows: 1fr; 
+		grid-gap: 10px 0px;
+		
+		width: 75%;
+		margin: 0 auto;
+		
+		grid-template-columns: 70% 30%;
+		
+		grid-template-areas:
+			"header pilootInlog"
+	}
+	
+	.grid-container2{
+		padding-top: 20px;
+		display: grid;
+		
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr; 
+		grid-gap: 20px 0px;
+		
+		width: 75%;
+		margin: 0 auto;
+		
+		grid-template-areas:
+			"operational1 operational2"
+			"analythical1 analythical2"
+	}
+	
+														/* Styling van de grid-boxes bij kleine desktop weergave */
+															.box1{
+																display: flex;
+																flex-flow: row;
 															}
 	/* Styling in box1 */
 	#tekstMobiel{
