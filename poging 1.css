@@ -17,13 +17,22 @@ h1{
 
 h2{
 	font-family: 'Raleway', sans-serif;
+	letter-spacing: 3px;
+	font-weight: normal;
+	margin: 0px;
+}
+
+h3{
+	font-family: 'Raleway', sans-serif;
 	letter-spacing: 5px;
 	font-weight: normal;
+	margin: 0px;
 }
 
 p{
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 2.1px;
+	margin: 0px;
 }
 
 
@@ -35,6 +44,22 @@ box-shadow:
 					0 2.8px 8px rgba(0, 0, 0, 0.028),
 					0 7px 19px rgba(0, 0, 0, 0.07)
 				;
+				
+box-shadow:
+  0 0.5px 2.4px rgba(0, 0, 0, 0.055),
+  0 4px 19px rgba(0, 0, 0, 0.11)
+;
+
+box-shadow:
+  0 0.5px 1.1px rgba(0, 0, 0, 0.075),
+  0 4px 9px rgba(0, 0, 0, 0.15)
+;
+
+box-shadow:
+  0 0.5px 1.1px rgba(0, 0, 0, 0.075),
+  0 4px 15px rgba(0, 0, 0, 0.15)
+;
+
 
 
 */

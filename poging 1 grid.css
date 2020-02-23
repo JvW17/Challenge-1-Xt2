@@ -69,39 +69,52 @@
 
 															.box3{
 																grid-area: operational1;
-																display: flex;
-																flex-direction: column;
+																position: relative;
 																background-color: white; /* orange */
 																border-radius: 20px 20px 0px 0px;
-																position: relative;
+																display: flex;
+																flex-direction: column;
+																justify-content: center;
+																align-items: center;
+																resize: both;
+																
 															}
 
 															.box4{
 																grid-area: operational2;
-																display: flex;
-																flex-flow: column;
 																background-color: white; /* dodgerblue */
 																border-radius: 0px 0px 20px 20px;
 																position: relative;
+																display: flex;
+																flex-direction: column;
+																justify-content: center;
+																align-items: center;
+																resize: both;
 															}
 
 															.box5{
 																grid-area: analythical1;
-																display: flex;
-																flex-flow: column;
 																margin-top: 20px;
 																background-color: white; /* limegreen */
 																border-radius: 20px 20px 0px 0px;
 																position: relative;
+																display: flex;
+																flex-direction: column;
+																justify-content: center;
+																align-items: center;
+																resize: both;
 															}
 
 															.box6{
 																grid-area: analythical2;
-																display: flex;
-																flex-flow: column;
 																background-color: white; /* hotpink */
 																border-radius: 0px 0px 20px 20px;
 																position: relative;
+																display: flex;
+																flex-direction: column;
+																justify-content: center;
+																align-items: center;
+																resize: both;
 														}
 	
 	/* Schaduwen van elke box */
@@ -115,30 +128,17 @@
 				z-index: -1;
 				border-radius: 20px;
 				box-shadow:
-  0 2px 12.4px rgba(0, 0, 0, 0.011),
-  0 3.5px 11.2px rgba(0, 0, 0, 0.028),
-  0 5.8px 10.7px rgba(0, 0, 0, 0.062),
-  0 16px 27px rgba(0, 0, 0, 0.17)
-;
-
-
-
-
-
-
-
-
+					0 0.5px 1.1px rgba(0, 0, 0, 0.075),
+					0 4px 12px rgba(0, 0, 0, 0.15)
+				;
 			}
 			
 			.box3:after, .box5:after{
 				border-radius: 20px 20px 0px 0px;
-
-
 			}
 			
 			.box4:after, .box6:after{
 				border-radius: 0px 0px 20px 20px;
-
 			}
 	
 	/* Styling in box1 */
@@ -168,6 +168,31 @@
 			
 			#huidigePilootTekst{
 				display: none;
+			}
+			
+	/* Styling in box3, 4, 5 en 60 */
+			.dashboardGegevenAanduiding{
+				/* background-color: red; */
+				height: auto;
+				width: 90%;
+				margin: 3% 0% 0% 5%;
+				line-height: 1.2;
+			}
+			
+			h2{
+				font-size: 20px;
+			}
+			
+			p{
+				font-size: 13px;
+			}
+			
+			.scheidingslijn{
+				 width: 80%;
+				 margin-bottom: 0px;
+				 margin-top: 3%;
+				 height: 2px;
+				 background-color: #EFF0F0;
 			}
 
 
@@ -414,6 +439,11 @@
 	
 														/* Styling van de grid-boxes bij tablet liggend weergave */
 															.box2{
+																display: flex;
+																justify-content: space-around;
+															}
+															
+															.box3, .box4, .box5, .box6{
 																display: flex;
 																justify-content: space-around;
 															}
