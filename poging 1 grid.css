@@ -37,7 +37,7 @@
 
 															.box1{
 																grid-area: header;
-																background-color: red;
+																background-color: white; /* red */
 																border-radius: 20px;
 																margin-right: 10px;
 																text-align: center;
@@ -45,39 +45,44 @@
 																flex-flow: column;
 																flex-wrap: wrap-reverse;
 																align-content: center;
+																position: relative;
 															/*	
 																display: flex;
 																justify-content: center;
 																align-items: center;
 																resize: both;
 																flex-flow: column; */
+																
 															}
 															
 															.box2{
 																grid-area: pilootInlog;
-																background-color: gray;
+																background-color: white; /* gray */
 																border-radius: 20px;
 																margin-left: 10px;
 																display: flex;
 																justify-content: center;
 																align-items: center;
 																resize: both;
+																position: relative;
 															}
 
 															.box3{
 																grid-area: operational1;
 																display: flex;
 																flex-direction: column;
-																background-color: orange;
+																background-color: white; /* orange */
 																border-radius: 20px 20px 0px 0px;
+																position: relative;
 															}
 
 															.box4{
 																grid-area: operational2;
 																display: flex;
 																flex-flow: column;
-																background-color: dodgerblue;
+																background-color: white; /* dodgerblue */
 																border-radius: 0px 0px 20px 20px;
+																position: relative;
 															}
 
 															.box5{
@@ -85,51 +90,89 @@
 																display: flex;
 																flex-flow: column;
 																margin-top: 20px;
-																background-color: limegreen;
+																background-color: white; /* limegreen */
 																border-radius: 20px 20px 0px 0px;
+																position: relative;
 															}
 
 															.box6{
 																grid-area: analythical2;
 																display: flex;
 																flex-flow: column;
-																background-color: hotpink;
+																background-color: white; /* hotpink */
 																border-radius: 0px 0px 20px 20px;
-	
+																position: relative;
 														}
 	
+	/* Schaduwen van elke box */
+			.box1:after, .box2:after, .box3:after, .box5:after, .box4:after, .box6:after{
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: -1;
+				border-radius: 20px;
+				box-shadow:
+  0 2px 12.4px rgba(0, 0, 0, 0.011),
+  0 3.5px 11.2px rgba(0, 0, 0, 0.028),
+  0 5.8px 10.7px rgba(0, 0, 0, 0.062),
+  0 16px 27px rgba(0, 0, 0, 0.17)
+;
+
+
+
+
+
+
+
+
+			}
+			
+			.box3:after, .box5:after{
+				border-radius: 20px 20px 0px 0px;
+
+
+			}
+			
+			.box4:after, .box6:after{
+				border-radius: 0px 0px 20px 20px;
+
+			}
+	
 	/* Styling in box1 */
-	#tekstGroteSchermen{
-		display: none;
-	}
-	
-	#logo{
-		width: 110px;
-		padding-top: 3%;
-	}
-	
-	h1{
-		font-size: 25px;
-		margin: 3% 0% 3% 0%;
-	}
+			#tekstGroteSchermen{
+				display: none;
+			}
+			
+			#logo{
+				width: 110px;
+				padding-top: 3%;
+			}
+			
+			h1{
+				font-size: 25px;
+				margin: 3% 0% 3% 0%;
+			}
 	
 	/* Styling in box2 */
-	#pilootLogo{
-		width: 65px;
-	}
-	
-	#pilootAanduidingTekst{
-		display: none;
-	}
-	
-	#huidigePilootTekst{
-		display: none;
-	}
+			#pilootLogo{
+				width: 65px;
+			}
+			
+			#pilootAanduidingTekst{
+				display: none;
+				color: #A90000;
+			}
+			
+			#huidigePilootTekst{
+				display: none;
+			}
 
 
 /* Kleine tablet staand */
 @media only screen and (min-width: 599px) and (max-width: 767px) {
-	
 	.grid-container{
 		display: grid;
 		
@@ -188,39 +231,48 @@
 																border-radius: 0px 20px 20px 0px;
 															}
 	
+	/* Schaduwen */
+			.box3:after, .box5:after{
+				border-radius: 20px 0px 0px 20px;
+			}
+			
+			.box4:after, .box6:after{
+				border-radius: 0px 20px 20px 0px;
+			}
+	
 	/* Styling in box1 */
-	#logo{
-		width: 120px;
-		padding: 0px;
-		margin-left: 7%;
-	}
-	
-	h1{
-		margin: auto;
-		margin-right: 5%;
-		font-size: 28px;
-	}
-	
-	#tekstMobiel{
-		display: inline;
-	}
-	
-	#tekstGroteSchermen{
-		display: none;
-	}
+			#logo{
+				width: 120px;
+				padding: 0px;
+				margin-left: 7%;
+			}
+			
+			h1{
+				margin: auto;
+				margin-right: 5%;
+				font-size: 28px;
+			}
+			
+			#tekstMobiel{
+				display: inline;
+			}
+			
+			#tekstGroteSchermen{
+				display: none;
+			}
 	
 	/* Styling in box2 */
-	#pilootLogo{
-		width: 60px;
-		margin: 10% 0% 10% 0%;
-	}
+			#pilootLogo{
+				width: 60px;
+				margin: 10% 0% 10% 0%;
+			}
 	
 }
 
 
 
 /* Grote tablet staand */
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: 768px){
 	.grid-container{
 		display: grid;
 		
@@ -278,57 +330,65 @@
 															.box6{
 																margin-top: 0px;
 																border-radius: 0px 20px 20px 0px;
-	}
+															}
+															
+	/* Schaduwen */
+			.box3:after, .box5:after{
+				border-radius: 20px 0px 0px 20px;
+			}
+			
+			.box4:after, .box6:after{
+				border-radius: 0px 20px 20px 0px;
+			}
 	
 	/* Styling in box1 */
-	#logo{
-		width: 100px;
-		padding: 0px;
-		margin: 2% 0% 2% 5%;
-	}
-	
-	h1{
-		margin: auto;
-		margin-right: 5%;
-		font-size: 28px;
-	}
-	
-	#tekstMobiel{
-		display: inline;
-	}
-	
-	#tekstGroteSchermen{
-		display: none;
-	}
+			#logo{
+				width: 100px;
+				padding: 0px;
+				margin: 2% 0% 2% 5%;
+			}
+			
+			h1{
+				margin: auto;
+				margin-right: 5%;
+				font-size: 28px;
+			}
+			
+			#tekstMobiel{
+				display: inline;
+			}
+			
+			#tekstGroteSchermen{
+				display: none;
+			}
 	
 	/* Styling in box2 */
-	#pilootAanduidingTekst{
-		display: none;
-	}
-	
-	#huidigePilootTekst{
-		display: none;
-	}
-	
-	#pilootLogo{
-		width: 60px;
-		margin: 10% 0% 10% 0%;
-	}
+			#pilootAanduidingTekst{
+				display: none;
+			}
+			
+			#huidigePilootTekst{
+				display: none;
+			}
+			
+			#pilootLogo{
+				width: 60px;
+				margin: 10% 0% 10% 0%;
+			}
 	
 }
 
 
 
 /* Tablet liggend */
-@media only screen and (min-width: 946px) and (max-width: 1099px){
-		
+@media only screen and (min-width: 946px) and (max-width: 1199px){
 	.grid-container{
 		display: grid;
 		
 		grid-template-rows: 1fr; 
 		grid-gap: 10px 0px;
 		
-		width: 80%;
+		width: 78%;
 		margin: 0 auto;
 		
 		grid-template-columns: 70% 30%;
@@ -344,7 +404,7 @@
 		grid-template-rows: 1fr; 
 		grid-gap: 20px 0px;
 		
-		width: 80%;
+		width: 78%;
 		margin: 0 auto;
 		
 		grid-template-areas:
@@ -353,56 +413,56 @@
 	}
 	
 														/* Styling van de grid-boxes bij tablet liggend weergave */
-														.box2{
-															display: flex;
-															justify-content: space-around;
-														}
+															.box2{
+																display: flex;
+																justify-content: space-around;
+															}
 	
 	
 	/* Styling in box1 */
-	#tekstMobiel{
-		display: none;
-	}
-	
-	#tekstGroteSchermen{
-		display: inline;
-	}
-	
-	#logo{
-		width: 100px;
-		padding: 0px;
-		margin-left: 3%;
-	}
-	
-	h1{
-		margin: auto;
-		margin-right: 3%;
-		font-size: 24px;
-	}
+			#tekstMobiel{
+				display: none;
+			}
+			
+			#tekstGroteSchermen{
+				display: inline;
+			}
+			
+			#logo{
+				width: 110px;
+				padding: 0px;
+				margin-left: 5%;
+			}
+			
+			h1{
+				margin: auto;
+				margin-right: 3%;
+				font-size: 26px;
+			}
 	
 	/* Styling in box2 */
-	#pilootTekstenBox2{
-		width: 60%;
-		height: auto;
-		margin-left: 8%;
-		line-height: 1.2;
-	}
-	
-	#pilootAanduidingTekst{
-		display: inline;
-		font-size: 14px;
-		margin-bottom: 50px;
-	}
-	
-	#huidigePilootTekst{
-		display: inline;
-		font-size: 14px;
-	}
-	
-	#pilootLogo{
-		width: 60px;
-		margin: 5% 6% 5% 0%;
-	}
+			#pilootTekstenBox2{
+				width: 60%;
+				height: auto;
+				margin-left: 8%;
+				line-height: 1.2;
+			}
+			
+			#pilootAanduidingTekst{
+				display: inline;
+				font-size: 15px;
+				margin-bottom: 50px;
+			}
+			
+			#huidigePilootTekst{
+				display: inline;
+				font-size: 15px;
+			}
+			
+			#pilootLogo{
+				width: 60px;
+				margin: 5% 6% 5% 0%;
+			}
 	
 	
 }
@@ -410,7 +470,7 @@
 
 
 /* Kleine desktop */
-@media only screen and (min-width: 1100px) and (max-width: 1354px){
+@media only screen and (min-width: 1200px) and (max-width: 1919px){
 	.grid-container{
 		display: grid;
 		
@@ -420,7 +480,7 @@
 		width: 75%;
 		margin: 0 auto;
 		
-		grid-template-columns: 70% 30%;
+		grid-template-columns: 75% 25%;
 		
 		grid-template-areas:
 			"header pilootInlog"
@@ -453,60 +513,61 @@
 																justify-content: space-around;
 															}
 															
+															
 	/* Styling in box1 */
-	#tekstMobiel{
-		display: none;
-	}
-	
-	#tekstGroteSchermen{
-		display: inline;
-	}
-	
-	#logo{
-		width: 120px;
-		margin: 2% 0% 2% 3%;
-	}
-	
-	h1{
-		margin-right: 3%;
-		font-size: 28px;
-	}
+			#tekstMobiel{
+				display: none;
+			}
+			
+			#tekstGroteSchermen{
+				display: inline;
+			}
+			
+			#logo{
+				width: 120px;
+				margin: 2% 0% 2% 3%;
+			}
+			
+			h1{
+				margin-right: 3%;
+				font-size: 28px;
+			}
 	
 	/* Styling in box2 */
-	#pilootTekstenBox2{
-		margin-left: 0%;
-	}
-	
-	#pilootAanduidingTekst{
-		display: inline;
-		font-size: 15px;
-	}
-	
-	#huidigePilootTekst{
-		display: inline;
-		font-size: 15px;
-		margin-top: 50px;
-	}
-	
-	#pilootLogo{
-		width: 70px;
-		margin: 3% 0% 3% 0%;
-	}
+			#pilootTekstenBox2{
+				margin-left: 0%;
+			}
+			
+			#pilootAanduidingTekst{
+				display: inline;
+				font-size: 18px;
+			}
+			
+			#huidigePilootTekst{
+				display: inline;
+				font-size: 18px;
+				margin-top: 50px;
+			}
+			
+			#pilootLogo{
+				width: 70px;
+				margin: 5% 0% 5% 0%;
+			}
 	
 }
 
 /* Grote desktop */
-@media only screen and (min-width: 1355px) {
+@media only screen and (min-width: 1920px) {
 	.grid-container{
 		display: grid;
 		
 		grid-template-rows: 1fr; 
 		grid-gap: 10px 0px;
 		
-		width: 75%;
+		width: 65%;
 		margin: 0 auto;
 		
-		grid-template-columns: 70% 30%;
+		grid-template-columns: 75% 25%;
 		
 		grid-template-areas:
 			"header pilootInlog"
@@ -520,7 +581,7 @@
 		grid-template-rows: 1fr; 
 		grid-gap: 20px 0px;
 		
-		width: 75%;
+		width: 65%;
 		margin: 0 auto;
 		
 		grid-template-areas:
@@ -533,22 +594,50 @@
 																display: flex;
 																flex-flow: row;
 															}
+															
+															.box2{
+																display: flex;
+																justify-content: space-around;
+															}
 	/* Styling in box1 */
-	#tekstMobiel{
-		display: none;
-	}
-	
-	#tekstGroteSchermen{
-		display: inline;
-	}
+			#tekstMobiel{
+				display: none;
+			}
+			
+			#tekstGroteSchermen{
+				display: inline;
+			}
+			
+			#logo{
+				width: 140px;
+				margin: 2% 0% 2% 5%;
+			}
+			
+			h1{
+				margin-right: 3%;
+				font-size: 32px;
+			}
 	
 	/* Styling in box2 */
-	#pilootAanduidingTekst{
-		display: inline;
-	}
-	
-	#huidigePilootTekst{
-		display: inline;
-	}
+			#pilootTekstenBox2{
+				margin-left: 0%;
+			}
+			
+			#pilootAanduidingTekst{
+				display: inline;
+				font-size: 20px;
+				line-height: 1.5;
+			}
+			
+			#huidigePilootTekst{
+				display: inline;
+				font-size: 20px;
+				line-height: 1.5;
+			}
+			
+			#pilootLogo{
+				width: 75px;
+				margin: 5% 0% 5% 0%;
+			}
 	
 }
