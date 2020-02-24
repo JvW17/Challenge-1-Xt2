@@ -170,7 +170,7 @@
 				display: none;
 			}
 			
-	/* Styling in box3, 4, 5 en 60 */
+	/* Styling in box3, 4, 5 en 6 */
 			.dashboardGegevenAanduiding{
 				/* background-color: red; */
 				height: auto;
@@ -291,6 +291,16 @@
 				width: 60px;
 				margin: 10% 0% 10% 0%;
 			}
+			
+	/* Styling in box3, 4, 5 en 6 */
+			.scheidingslijn{
+				border-right: 2px solid #EFF0F0;
+				position: absolute;
+				margin-top: 0%;
+				height: 85%;
+				width: 0%;
+				right: 0%;
+			}
 	
 }
 
@@ -304,7 +314,7 @@
 		grid-template-rows: 1fr; 
 		grid-gap: 10px 0px;
 		
-		width: 80%;
+		width: 85%;
 		margin: 0 auto;
 		
 		grid-template-columns: 85% 15%;
@@ -320,7 +330,7 @@
 		grid-template-rows: 1fr; 
 		grid-gap: 20px 0px;
 		
-		width: 80%;
+		width: 85%;
 		margin: 0 auto;
 		
 		grid-template-areas:
@@ -399,6 +409,21 @@
 			#pilootLogo{
 				width: 60px;
 				margin: 10% 0% 10% 0%;
+			}
+		
+	/* Styling in box3, 4, 5 en 6 */
+			.scheidingslijn{
+				border-right: 2px solid #EFF0F0;
+				position: absolute;
+				margin-top: 0%;
+				height: 85%;
+				width: 0%;
+				right: 0%;
+			}
+	
+			.dashboardGegevenAanduiding{
+				/* background-color: red; */
+				margin: 2% 0% 0% 5%;
 			}
 	
 }
@@ -584,6 +609,12 @@
 				margin: 5% 0% 5% 0%;
 			}
 	
+	/* Styling in box3, 4, 5 en 6 */	
+			.dashboardGegevenAanduiding{
+				/* background-color: red; */
+				margin: 2% 0% 0% 5%;
+			}
+	
 }
 
 /* Grote desktop */
@@ -668,6 +699,12 @@
 			#pilootLogo{
 				width: 75px;
 				margin: 5% 0% 5% 0%;
+			}
+	
+	/* Styling in box3, 4, 5 en 6 */	
+			.dashboardGegevenAanduiding{
+				/* background-color: red; */
+				margin: 2% 0% 0% 5%;
 			}
 	
 }
