@@ -186,6 +186,7 @@
 			
 			p{
 				font-size: 13px;
+				margin-top: 0px;
 			}
 			
 			.scheidingslijn{
@@ -200,6 +201,16 @@
 		.gauge {
 			height: 275px;
 			margin: 8% 0% 8% 0%;
+		}
+		
+	/* Drukmeter styling */
+		#drukmeter{
+			margin: 8% 0% 8% 0%;
+		}
+		
+		.d3-gauge {
+			width: 275px;
+			height: 275px;
 		}
 	
 	/* Pie chart styling */
@@ -294,6 +305,10 @@
 				font-size: 28px;
 			}
 			
+			p{
+				margin-top: 3px;
+			}
+			
 			#tekstMobiel{
 				display: inline;
 			}
@@ -321,7 +336,17 @@
 	/* Snelheidsmeter styling */
 		.gauge {
 			height: 175px;
-			margin: 8% 0% 8% 0%;
+			margin: 3% 0% 8% 0%;
+		}
+		
+	/* Drukmeter styling */
+		#drukmeter{
+			margin: 0% 0% 6% 0%;
+		}
+		
+		.d3-gauge {
+			width: 175px;
+			height: 175px;
 		}
 			
 	/* Pie chart styling */
@@ -422,6 +447,10 @@
 				font-size: 28px;
 			}
 			
+			p{
+				margin-top: 3px;
+			}
+			
 			#tekstMobiel{
 				display: inline;
 			}
@@ -462,7 +491,17 @@
 	/* Snelheidsmeter styling */
 		.gauge {
 			height: 225px;
-			margin: 8% 0% 8% 0%;
+			margin: 3% 0% 8% 0%;
+		}
+		
+	/* Drukmeter styling */
+		#drukmeter{
+			margin: 0% 0% 6% 0%;
+		}
+		
+		.d3-gauge {
+			width: 225px;
+			height: 225px;
 		}
 			
 	/* Pie chart styling */
@@ -542,6 +581,10 @@
 				margin-right: 3%;
 				font-size: 26px;
 			}
+			
+			p{
+				margin-top: 5px;
+			}
 	
 	/* Styling in box2 */
 			#pilootTekstenBox2{
@@ -570,7 +613,17 @@
 	/* Snelheidsmeter styling */
 		.gauge {
 			height: 250px;
-			margin: 8% 0% 8% 0%;
+			margin: 3% 0% 8% 0%;
+		}
+		
+	/* Drukmeter styling */
+		#drukmeter{
+			margin: 0% 0% 6% 0%;
+		}
+		
+		.d3-gauge {
+			width: 250px;
+			height: 250px;
 		}
 	
 	
@@ -623,6 +676,11 @@
 																justify-content: space-around;
 															}
 															
+															.box4{
+																display: flex;
+																justify-content: space-between;
+															}
+															
 															
 	/* Styling in box1 */
 			#tekstMobiel{
@@ -641,6 +699,10 @@
 			h1{
 				margin-right: 3%;
 				font-size: 28px;
+			}
+			
+			p{
+				margin-top: 5px;
 			}
 	
 	/* Styling in box2 */
@@ -673,12 +735,22 @@
 	/* Snelheidsmeter styling */
 		.gauge {
 			height: 300px;
-			margin: 5% 0% 5% 0%;
+			margin: 0% 0% 8% 0%;
+		}
+		
+	/* Drukmeter styling */
+		#drukmeter{
+			margin: 0% 0% 6% 0%;
+		}
+		
+		.d3-gauge {
+			width: 300px;
+			height: 300px;
 		}
 			
 	/* Pie chart styling */
 		.container{
-			margin: 5% 0% 5% 0%;
+			margin: 0% 0% 3% 0%;
 			position: relative; 
 			height:: 60%;
 			width: 60%;
@@ -749,6 +821,10 @@
 			h1{
 				margin-right: 3%;
 				font-size: 32px;
+			}
+			
+			p{
+				margin-top: 5px;
 			}
 	
 	/* Styling in box2 */

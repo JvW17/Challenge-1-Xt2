@@ -16,12 +16,12 @@ google.charts.load('current', {'packages':['gauge']});
     }
 	
 	setInterval(function() {
-			gaugeData.setValue(0, 0, gaugeData.getValue(0, 0) + 1000 * Math.floor(1));
+			gaugeData.setValue(0, 0, gaugeData.getValue(0, 0) + 450 * Math.floor(1));
           gauge.draw(gaugeData, gaugeOptions);
-        }, 10000);
+        }, 2000);
 
 
 var options = {
           width: 400, 
-		  height: 120
+		  height: 120		  
         };
