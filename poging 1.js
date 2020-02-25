@@ -1,5 +1,5 @@
 /* Resterende bananen */
-let myChart = document.getElementById('myChart').getContext('2d');
+let myChart = document.getElementById('cola').getContext('2d');
 
     // Global Options
 
@@ -16,9 +16,9 @@ let myChart = document.getElementById('myChart').getContext('2d');
           ],
           //backgroundColor:'green',
           backgroundColor:[
-            'rgba(255, 99, 132, 0.6)',
-            'rgba(54, 162, 235, 0.6)',
-            'rgba(255, 206, 86, 0.6)'
+            '#FE001A',
+            '#dadada',
+            '#720D34'
           ],
           borderWidth:1,
           borderColor:'#777',
@@ -28,7 +28,7 @@ let myChart = document.getElementById('myChart').getContext('2d');
       },
       options:{
         legend:{
-          display:true,
+          display:false,
           position:'right',
           labels:{
             fontColor:'#000'
@@ -36,10 +36,10 @@ let myChart = document.getElementById('myChart').getContext('2d');
         },
         layout:{
           padding:{
-            left:50,
+            left:0,
             right:0,
-            bottom:0,
-            top:0
+            bottom:30,
+            top:30
           }
         },
         tooltips:{
@@ -47,3 +47,6 @@ let myChart = document.getElementById('myChart').getContext('2d');
         }
       }
     });
+
+
+

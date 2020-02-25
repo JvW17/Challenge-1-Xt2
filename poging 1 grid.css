@@ -25,6 +25,7 @@
 		
 		width: 90%;
 		margin: 0 auto;
+		margin-bottom: 30px;
 		
 		grid-template-areas:
 			"operational1"
@@ -194,6 +195,20 @@
 				 height: 2px;
 				 background-color: #EFF0F0;
 			}
+	
+	/* Snelheidsmeter styling */
+		.gauge {
+			height: 275px;
+			margin: 8% 0% 8% 0%;
+		}
+	
+	/* Pie chart styling */
+		.container{
+			margin: 1% 0% 1% 0%;
+			position: relative; 
+			height::90%;
+			width:90%;
+		}
 
 
 /* Kleine tablet staand */
@@ -222,6 +237,7 @@
 		
 		width: 85%;
 		margin: 0 auto;
+		margin-bottom: 30px;
 		
 		grid-template-areas:
 			"operational1 operational2"
@@ -301,7 +317,23 @@
 				width: 0%;
 				right: 0%;
 			}
-	
+			
+	/* Snelheidsmeter styling */
+		.gauge {
+			height: 175px;
+			margin: 8% 0% 8% 0%;
+		}
+			
+	/* Pie chart styling */
+		.container{
+			margin: 2% 0% 2% 0%;
+			position: relative; 
+			height::80%;
+			width:80%;
+		}
+
+
+
 }
 
 
@@ -332,6 +364,7 @@
 		
 		width: 85%;
 		margin: 0 auto;
+		margin-bottom: 30px;
 		
 		grid-template-areas:
 			"operational1 operational2"
@@ -425,13 +458,27 @@
 				/* background-color: red; */
 				margin: 2% 0% 0% 5%;
 			}
+			
+	/* Snelheidsmeter styling */
+		.gauge {
+			height: 225px;
+			margin: 8% 0% 8% 0%;
+		}
+			
+	/* Pie chart styling */
+		.container{
+			margin: 2% 0% 2% 0%;
+			position: relative; 
+			height:: 70%;
+			width: 70%;
+		}
 	
 }
 
 
 
 /* Tablet liggend */
-@media only screen and (min-width: 946px) and (max-width: 1199px){
+@media only screen and (min-width: 950px) and (max-width: 1199px){
 	.grid-container{
 		display: grid;
 		
@@ -456,6 +503,7 @@
 		
 		width: 78%;
 		margin: 0 auto;
+		margin-bottom: 30px;
 		
 		grid-template-areas:
 			"operational1 operational2"
@@ -518,6 +566,12 @@
 				width: 60px;
 				margin: 5% 6% 5% 0%;
 			}
+			
+	/* Snelheidsmeter styling */
+		.gauge {
+			height: 250px;
+			margin: 8% 0% 8% 0%;
+		}
 	
 	
 }
@@ -551,6 +605,7 @@
 		
 		width: 75%;
 		margin: 0 auto;
+		margin-bottom: 30px;
 		
 		grid-template-areas:
 			"operational1 operational2"
@@ -614,6 +669,22 @@
 				/* background-color: red; */
 				margin: 2% 0% 0% 5%;
 			}
+			
+	/* Snelheidsmeter styling */
+		.gauge {
+			height: 300px;
+			margin: 5% 0% 5% 0%;
+		}
+			
+	/* Pie chart styling */
+		.container{
+			margin: 5% 0% 5% 0%;
+			position: relative; 
+			height:: 60%;
+			width: 60%;
+		}
+		
+		
 	
 }
 
@@ -644,6 +715,7 @@
 		
 		width: 65%;
 		margin: 0 auto;
+		margin-bottom: 30px;
 		
 		grid-template-areas:
 			"operational1 operational2"
