@@ -19,7 +19,7 @@ var chart = new Chart(ctx, {
             '#029bdc',	//97D494	7ADE65
             '#F75A66',	//FBC587	F62A3A
 			'#FAB257',	//F75A66	FAB257
-            '#7ADE65'	//614B55	E99C00
+            '#614B55'	//614B55	E99C00
           ],
           borderWidth:1,
           borderColor:'#777',
