@@ -60,6 +60,7 @@
 						<div class="scheidingslijn"></div>
 					</section>
 					
+					
 					<!-- Styling in box4, het blok met informatie over de luchtdruk in het vrachtruim  -->
 					<section class="grid-item box4 ">
 						<article class="dashboardGegevenAanduiding">
@@ -67,42 +68,30 @@
 							<p>Uitgedrukt in kilopascal</p>
 						</article>
 						
-						<!-- Dit is de barmeter -->
-							
-							
+						<!-- Dit is de drukmeter -->
 							<div id="drukmeter">
 								<script src="https://wzrd.in/standalone/d3-gauge"></script>
-								<script src="https://wzrd.in/standalone/xtend"></script>
-							</div>	
+							</div>
 							
-						
 					</section>
-					
-					
-					
 					
 					
 					<!-- Styling in box5, het blok met informatie over de resterende bananen aan boord  -->
 					<section class="grid-item box5 ">
 						<article class="dashboardGegevenAanduiding">
 							<h2>Resterende bananen</h2>
-							<p>Rot en vers</p>
+							<p>Bananen per stuk</p>
 						</article>
 						
-						
-						
-						
-				<!--		<div class="container">
-							<canvas id="bananen"></canvas>
-						</div> -->
-						
+						<!-- Dit is de kolomgrafiek -->
+						<div id="kolomGrafiek">
+							<canvas id="myChart"></canvas>
+						</div>
 						
 						
 						<!-- Dit is de lijn die box3 en box 4 van elkaar scheidt  -->
 						<div class="scheidingslijn"></div>
 					</section>
-					
-					
 					
 					
 					<!-- Styling in box6, het blok met informatie over de resterende blikjes cola aan boord  -->
@@ -112,6 +101,7 @@
 							<p>Blikjes van 300ml</p>
 						</article>
 						
+						<!-- Dit is de piechart -->
 						<div class="container">
 							<canvas id="cola"></canvas>
 						</div>
@@ -120,9 +110,13 @@
 				
 			</div>
 			
+			<!-- Deze JavaScript-verwijzingen zorgen ervoor dat de vier datavisualisaties werken -->
 			<script type="text/javascript" src="poging 1.js"></script>
 			<script type="text/javascript" src="poging 1 javascript 2.js"></script>
 			<script type="text/javascript" src="poging 1 javascript 3.js"></script>
+			<script type="text/javascript" src="poging 1 javascript 4.js"></script>
+			
+			<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 			
 			
 		</main>

@@ -16,7 +16,7 @@ let myChart = document.getElementById('cola').getContext('2d');
           ],
           //backgroundColor:'green',
           backgroundColor:[
-            '#FE001A',
+            '#f20019', //FE001A
             '#dadada',
             '#720D34'
           ],
@@ -38,8 +38,8 @@ let myChart = document.getElementById('cola').getContext('2d');
           padding:{
             left:0,
             right:0,
-            bottom:30,
-            top:30
+            bottom:0,
+            top:0
           }
         },
         tooltips:{

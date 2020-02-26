@@ -10,17 +10,10 @@ function createGauge (opts) {
   var g = d3Gauge(node, opts);
   g.currentValue = g._range / 2;
   gauges.push(g);
-  
-  /* var el = document.createElement('div');
-  el.setAttribute('class', 'gauge-container');
-  gaugesContainer.appendChild(el);
-  var g = gauge(el, opts);
-  g.currentValue = g._range / 2;
-  gauges.push(g); */
 }
 
 function getRandomNextValue(gauge) {
-  gauge.currentValue += (Math.random() - 0.5) * gauge._range / 10; 
+  gauge.currentValue += (Math.random() - 0.5) * gauge._range / 20; 			// - 0,5 en /10
   if (gauge.currentValue < gauge._min) gauge.currentValue = gauge._min;
   if (gauge.currentValue > gauge._max) gauge.currentValue = gauge._max;
   return gauge.currentValue;
