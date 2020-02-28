@@ -1,22 +1,22 @@
-/* Resterende bananen */
+// Deze regels JavaScript zorgen ervoor dat de de piechart gecreëerd en gestyled wordt.
 let myChart = document.getElementById('cola').getContext('2d');
 
-    // Global Options
-
-    let massPopChart = new Chart(myChart, {
-      type:'doughnut', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+// Dit is de data voor de grafiek.
+let massPopChart = new Chart(myChart, {
+      type:'doughnut',
       data:{
-        labels:['Normale Cola', 'Cola Zero', 'Cola Cherry'],
+        labels:['Normale Cola', 'Cola Light', 'Cola Cherry'],
         datasets:[{
           label:'Cola',
           data:[
-            300,
+            304,
             263,
             172
           ],
-          //backgroundColor:'green',
+
+          // Hieronder staan enkele regels die de grafiek styling geven.
           backgroundColor:[
-            '#f20019', //FE001A
+            '#f20019',
             '#dadada',
             '#720D34'
           ],
@@ -26,6 +26,8 @@ let myChart = document.getElementById('cola').getContext('2d');
           hoverBorderColor:'#000'
         }]
       },
+      
+      // Deze regels hebben invloed op de styling van de grafiek.
       options:{
         legend:{
           display:false,
@@ -47,6 +49,3 @@ let myChart = document.getElementById('cola').getContext('2d');
         }
       }
     });
-
-
-

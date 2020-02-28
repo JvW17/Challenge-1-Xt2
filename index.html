@@ -7,27 +7,28 @@
 		<link type="text/css" href="algemene styling dashboard.css" rel="stylesheet" />
 		<link type="text/css" href="grid styling dashboard.css" rel="stylesheet" />
 		<link rel="icon" type="image/png" href="favicon.png">
-		
-		<!-- Deze link zorgt ervoor dat de pie chart werkt -->
+
+		<!-- Deze link verwijst naar het framework dat ervoor zorgt dat de pie chart werkt -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-		
-		<!-- Deze link zorgt ervoor dat de snelheid en turbo charts werken -->
+
+		<!-- Deze link verwijst naar de frameworks die ervoor zorgen dat de snelheids- en drukmeter werken -->
 		 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-		
 	</head>
+
 	<body>
 		<main>
-			
+
+			<!--  Hieronder staat het eerste grid-container. Dit grid-container bevat de styling van box1 en box2, dit zijn de bovenste twee boxes op de pagina. -->
 			<div class="grid-container">
-			
-				<!--  Styling in box1, het blok linksboven -->
+
+				<!--  Styling in box1, het blok linksboven. -->
 				<header class="grid-item box1">
 					<img src="Afbeeldingen/logo.svg" alt="logo" id="logo" draggable="false"/>
 					<h1 id="tekstMobiel">Dashboard</h1>
 					<h1 id="tekstGroteSchermen">Ruimteveer dashboard</h1>
 				</header>
-				
-				<!-- Styling in box2, het blok rechtsboven  -->
+
+				<!-- Styling in box2, het blok rechtsboven.  -->
 				<section class="grid-item box2">
 					<article id="pilootTekstenBox2">
 						<h3 id="pilootAanduidingTekst">Uw piloot</h3>
@@ -36,85 +37,77 @@
 					</article>
 					<img src="Afbeeldingen/aap 2.svg" alt="Karel is momenteel de piloot" id="pilootLogo" draggable="false"/>
 				</section>
-			
+
 			</div>
-			
+
+			<!--  Hieronder staat het tweede en laatste grid-container. Dit grid-container bevat de styling van box3, box4, box5 en box6. Box3 en box4 bevatten informatie over de huidige snelheid en de huidige druk in het vrachtruim van het ruimteschip. Box3 en box4 behoren dus tot een operational dashboard. Box5 en box6 bevatten informatie over de resterende hoeveelheid bananen en cola aan boord van het ruimteschip. Box5 en box6 behoren dus tot een analythical dashboard. -->
 			<div class="grid-container2">
-			
-					<!-- Styling in box3, het blok met informatie over de huidige snelheid  -->
+
+					<!-- Styling in box3, het blok met informatie over de huidige snelheid. -->
 					<section class="grid-item box3 ">
 						<article class="dashboardGegevenAanduiding">
 							<h2>Snelheid</h2>
 							<p>In kilometer per uur</p>
 						</article>
-						
+
 							<!-- Dit is de snelheidsmeter -->
 							<div class="gauge" id="chart_in"></div>
-						<!--	<div id="gauge_div" style="width:400px; height: auto"></div> -->
-							
-						
-						<!-- Dit is de lijn die box3 en box 4 van elkaar scheidt  -->
-						<div class="scheidingslijn"></div>
+
+							<!-- Dit is de lijn die box3 en box 4 van elkaar scheidt  -->
+							<div class="scheidingslijn"></div>
 					</section>
-					
-					
-					<!-- Styling in box4, het blok met informatie over de luchtdruk in het vrachtruim  -->
+
+					<!-- Styling in box4, het blok met informatie over de druk in het vrachtruim. -->
 					<section class="grid-item box4 ">
 						<article class="dashboardGegevenAanduiding">
 							<h2>Druk in vrachtruim</h2>
 							<p>Uitgedrukt in kilopascal</p>
 						</article>
-						
+
 						<!-- Dit is de drukmeter -->
 							<div id="drukmeter">
 								<script src="https://wzrd.in/standalone/d3-gauge"></script>
 							</div>
-							
+
 					</section>
-					
-					
+
 					<!-- Styling in box5, het blok met informatie over de resterende bananen aan boord  -->
 					<section class="grid-item box5 ">
 						<article class="dashboardGegevenAanduiding">
 							<h2>Resterende bananen</h2>
 							<p>Bananen per stuk</p>
 						</article>
-						
+
 						<!-- Dit is de kolomgrafiek -->
 						<div id="kolomGrafiek">
 							<canvas id="myChart"></canvas>
 						</div>
-						
-						
+
 						<!-- Dit is de lijn die box3 en box 4 van elkaar scheidt  -->
 						<div class="scheidingslijn"></div>
 					</section>
-					
-					
+
 					<!-- Styling in box6, het blok met informatie over de resterende blikjes cola aan boord  -->
 					<section class="grid-item box6 ">
 						<article class="dashboardGegevenAanduiding">
 							<h2>Resterende blikjes cola</h2>
-							<p>Blikjes van 300ml</p>
+							<p>Blikjes van 330ml</p>
 						</article>
-						
+
 						<!-- Dit is de piechart -->
 						<div class="container">
 							<canvas id="cola"></canvas>
 						</div>
-						
 					</section>
-				
+
 			</div>
-			
+
 			<!-- Deze JavaScript-verwijzingen zorgen ervoor dat de vier datavisualisaties werken -->
-			<script type="text/javascript" src="JavaScript pie chart.js"></script>
-			<script type="text/javascript" src="JavaScript snelheid gauge.js"></script>
-			<script type="text/javascript" src="JavaScript druk gauge.js"></script>
-			<script type="text/javascript" src="JavaScript kolomgrafiek.js"></script>
-			
-			
-			
+			<script type="text/javascript" src="JavaScript snelheid gauge.js"></script> 	<!-- Dit is de verwijzing naar de JavaScript van de snelheidsmeter -->
+			<script type="text/javascript" src="JavaScript druk gauge.js"></script> 	<!-- Dit is de verwijzing naar de JavaScript van de drukmeter -->
+			<script type="text/javascript" src="JavaScript kolomgrafiek.js"></script> 	<!-- Dit is de verwijzing naar de JavaScsript van de kolomgrafiek -->
+			<script type="text/javascript" src="JavaScript pie chart.js"></script> 	<!-- Dit is de verwijzing naar de JavaScript van de piechart -->
+
 		</main>
 	</body>
 </html>

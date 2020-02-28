@@ -1,9 +1,10 @@
+// Deze regels JavaScript zorgen ervoor dat de de kolomgrafiek gecreëerd en gestyled wordt.
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
-    // The type of chart we want to create
+    // Dit is het type grafiek, oftewel 'bar' (kolom).
     type: 'bar',
 
-    // The data for our dataset
+    // Dit is de data voor de grafiek.
     data:{
         labels:['Onrijp', 'Rijp', 'Overrijp', 'Rot'],
         datasets:[{
@@ -12,14 +13,15 @@ var chart = new Chart(ctx, {
             317,
             263,
             172,
-			85
+            85
           ],
-          //backgroundColor:'green',
+
+          // Hieronder staan enkele regels die de grafiek styling geven.
           backgroundColor:[
-            '#029bdc',	//97D494	7ADE65
-            '#F75A66',	//FBC587	F62A3A
-			'#FAB257',	//F75A66	FAB257
-            '#614B55'	//614B55	E99C00
+            '#029bdc',
+            '#F75A66',
+            '#FAB257',
+            '#614B55'
           ],
           borderWidth:1,
           borderColor:'#777',
@@ -28,9 +30,9 @@ var chart = new Chart(ctx, {
         }]
       },
 
-    // Configuration options go here
+    // Deze regels hebben invloed op de styling van de grafiek.
     options:{
-		maintainAspectRatio: false,
+		maintainAspectRatio: false,  // Deze regel zorgt ervoor dat de grafiek zich 'vrijer' kan bewegen. Hierdoor is deze iets groter en dit past beter in het dashboard.
         legend:{
           display:false
         },
