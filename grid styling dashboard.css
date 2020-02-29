@@ -868,7 +868,7 @@
 			"analythical1 analythical2"
 	}
 
-														/* Styling van de grid-boxes bij kleine desktop weergave */
+														/* Styling van de grid-boxes bij kleine desktop weergave. */
 															.box1{
 																display: flex;
 																flex-flow: row;
