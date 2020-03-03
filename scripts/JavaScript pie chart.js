@@ -26,7 +26,7 @@ let massPopChart = new Chart(myChart, {
           hoverBorderColor:'#000'
         }]
       },
-
+      
       // Deze regels hebben invloed op de styling van de grafiek.
       options:{
         legend:{
