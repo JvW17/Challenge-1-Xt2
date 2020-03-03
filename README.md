@@ -1,6 +1,7 @@
 # Challenge-1-Xt2
 
 Ik heb een SpaceX dashboard gemaakt voor challenge 1, een onderdeel van een schoolvak van mijn studie Communicatie en Multimedia Design.
+
 LET OP: laadt de website langzaam? Geen zorgen, ik leg uit waarom dit soms zo is in de allerlaatste regels in deze README-file.
 
 Klein verhaaltje over dit dashboard (let op: bevat slechte humor):
