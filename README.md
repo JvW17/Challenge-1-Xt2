@@ -4,7 +4,7 @@ Ik heb een SpaceX dashboard gemaakt voor challenge 1, een onderdeel van een scho
 LET OP: laadt de website langzaam? Of laadt een van de gauges niet? Geen zorgen, ik leg uit waarom dit soms zo is in de allerlaatste regels in deze README-file.
 
 Klein achtergrondverhaaltje over dit dashboard (let op: bevat slechte humor): 🐵
-- De piloot van het ruimteschip is Karel de aap. Hij was jarenlang testpiloot van de allernieuwste ruimteschepen en raketten bij NASA. Dit deed hij met veel plezier. Na een tijdje vond Karel het mooi geweest. Hij begon een nieuwe baan als commerciële ruimtepiloot bij SpaceX. Omdat Karel veel ervaring had opgedaan toen hij voor NASA werkte, weet Karel precies hoe hij een ruimteschip veilig naar Mars kan loodsen. Natuurlijk had Karel hiervoor een dashboard nodig met de voor hem meest broodnodige informatie. Omdat Karel een beetje koppig is, is het dashboard speciaal voor hem aangepast en kan hij zijn meest belangrijke gegevens erop terugzien.
+- De piloot van het ruimteschip is Karel de aap. Hij was jarenlang testpiloot van de allernieuwste ruimteschepen en raketten bij NASA. Dit deed hij met veel plezier. Na een tijdje vond Karel het mooi geweest en begon een nieuwe baan als commerciële ruimtepiloot bij SpaceX. Omdat Karel veel ervaring had opgedaan toen hij voor NASA werkte, weet Karel precies hoe hij een ruimteschip veilig naar Mars kan loodsen. Natuurlijk had Karel hiervoor een dashboard nodig met de voor hem meest broodnodige informatie. Omdat Karel een beetje koppig is, is het dashboard speciaal voor hem aangepast en kan hij zijn meest belangrijke gegevens erop terugzien.
 
 
 Nu even serieus:
