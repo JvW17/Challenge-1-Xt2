@@ -38,7 +38,7 @@ Informatie over de styling van de website (ik houd het kort):
 - Rechtsbovenin is de profielfoto van de huidige piloot te vinden. In dit geval is dit Karel, daarom is zijn profielfoto te zien.
 - De achtergrondkleur is NIET wit, maar een lichte kleur grijs. Ik had geen zin om felle kleuren te gebruiken in de body van het dashboard, maar wilde het rustig en neutraal houden. Vandaar dat de grid-boxes wit zijn en de achtergrondkleur lichtgrijs.
 - Om de grid-boxes wat meer te laten opvallen, heb ik deze een lichte schaduw gegeven.
-- Het letertype dat ik heb gebruikt is 'Raleway'. Het lettertype in de gauges is 'Arial' (verklaar me voor gek, maar dit lettertype is verschrikkelijk goed leesbaar. Iets wat je wilt als je kritieke informatie als de snelheid en huidige druk wilt zien).
+- Het letertype dat ik heb gebruikt is 'Raleway'. Het lettertype in de gauges is 'Arial' (verklaar me voor gek, maar dit lettertype is verschrikkelijk goed leesbaar. Iets wat je wilt bij kritieke informatie als de snelheid en huidige druk wilt zien).
 
 
 Laadt de website langzaam? Of laadt een van de gauges niet? 🙁
